@@ -48,17 +48,6 @@ function includeDebugKey(contentsBuffer) {
 function manifestTask() {
   return src(['assets/manifest.json'])
     .pipe(through2.obj(async function (file, _, cb) {
-      // if (!production) {
-      //   const debugKey = fs
-      //     .readFileSync(path.join(process.cwd(), 'assets/debug.pem'))
-      //     .toString();
-      //   file.contents = encodeManifestKey64(file.contents.toString(), debugKey);
-      // } else if (process.env.CI) {
-      //   file.contents = encodeManifestKey64(
-      //     file.contents.toString(),
-      //     process.env.PEM_KEY,
-      //   );
-      // }
       file.contents = includeDebugKey(file.contents);
       file.contents = updateVersion(file.contents);
       cb(null, file);
