@@ -1,0 +1,12 @@
+{
+  "name": "template",
+  "private": true,
+  "version": "0.1.0",
+  "description": "",
+  "author": "Alexander Dischberg",
+  "workspaces": [
+    "plato_svelte_app",
+    "plato_api"
+  ],
+  "license": "MIT"
+}
