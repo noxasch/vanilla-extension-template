@@ -33,12 +33,6 @@ const production = process.env.NODE_ENV === 'production';
 const rollupPlugins = [
   commonjs(),
   babel({
-    // presets: [
-    //   '@babel/preset-env',
-    // ],
-    // plugins: [['@babel/plugin-transform-runtime', {
-    //   regenerator: true,
-    // }]],
     babelHelpers: 'bundled',
     exclude: 'node_modules/**',
     configFile: false,
