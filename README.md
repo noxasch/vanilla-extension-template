@@ -17,7 +17,8 @@ The build script is a guplfile combine with rollup to bundle the javascript.
 
 Fonts, manifest.json and CSS files will be copied from assets folder to the build folder.
 
-Icon image should be in `icon/my-icon.png` and the script will generate output based on manifest file.
+Icon image should be in `assets/my-icon.png` and the script will generate `16`, `48` and `128` 
+size according to the extension guidelines.
 
 `debug` output folder can be use to directly loaded into your browser.
 `release` output folder contain a zipped minified version of the extension.
