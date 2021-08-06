@@ -99,7 +99,9 @@ WIP
 ## Typescript support
 
 I prefer using vanilla javascript with JSdoc to utilize typescript in vscode instead
-of using typescript direcly. It allow me to document my code and add type acquisition.
+of using typescript direcly. I use this a lot in server side, and it allow me to execute 
+my source code without transpile time while allow me to document my code with type acquisition.
+However this is not the case with this template since we need to bundle it anyway. 
 The tsconfig included works well with this setup.
 
 Here are some read if you are interested with using jsdoc:
